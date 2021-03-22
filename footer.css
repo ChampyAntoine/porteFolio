@@ -1,0 +1,26 @@
+footer  {
+    background-color: rgb(20, 20, 20);
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer figure {
+    margin: 5px;
+    align-items: center;
+}
+
+footer figure img {
+    width: 32px;
+}
+
+
+

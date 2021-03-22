@@ -1,0 +1,110 @@
+/* #region variables */
+
+:root {
+    --border_radius: 10px;
+    --main_color: rgb(39, 39, 39);
+}
+
+/* #endregion */
+
+header {
+    background-color: rgba(42, 61, 112, 0.3);
+    display: flex;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom-left-radius: var(--border_radius);
+    border-bottom-right-radius: var(--border_radius);
+}
+
+h1 {
+    margin: 5px;
+    display: flex;
+    width: 120px;
+}
+
+.menu {
+    display: none;
+}
+
+img {
+    width: 120px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav > ul li {
+    display: flex;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    margin: 0 5px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border_radius);
+}
+
+.sous{
+    display: none;
+    top: 68px;
+    position: absolute;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous {
+    display: block;
+}
+
+.sous li{
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    height: 50px;
+    margin: 0;
+    padding: 0 10px;
+    justify-content: left;
+    align-items: center;
+    border-radius: var(--border_radius);
+}
+
+.sous li a {
+    color:black;
+}
+
+.sous li:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width: 640px) {
+    .menu{
+        display: flex;
+    }
+
+    ul {
+        display: none;
+    }
+}

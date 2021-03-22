@@ -1,0 +1,148 @@
+/* #region variables */
+
+:root {
+    --border_radius: 10px;
+    --main_color: rgb(39, 39, 39);
+}
+
+/* #endregion */
+
+
+main {
+    background-color: var(--main_color);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px ;
+    flex-direction: row;
+    width: 100%;
+}
+
+section {
+    background-color: var(--main_color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 10px);
+    margin: 5px;
+}
+
+article {
+    background-color: var(--main_color);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 5px;
+}
+
+h2 {
+    margin: 30px 10px;
+    color: white;
+}
+
+h3, h4 , p{
+    color: whitesmoke;
+}
+
+.encadre {
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px*2);
+    margin: 20px;
+    padding: 10px 50px;
+    border-radius: var(--border_radius);
+}
+
+.encadre:hover {
+    background-color: rgba(33, 58, 126, 0.3);
+    transform: scale(1.02);
+    transition-duration: 20ms;
+}
+
+#exp-pro > div > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#exp-pro > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#exp-pro svg {
+    fill: lightcyan;
+}
+
+
+
+#competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#competences > div {
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 50px;
+    border-radius: var(--border_radius);
+}
+
+#competences .bloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#competences h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+#competences h4 {
+    text-align: center;
+    visibility: hidden;
+}
+#competences figure:hover + h4 {
+    visibility: initial;
+}
+
+#competences figure {
+    border-radius: var(--border_radius);
+    height: 120px;
+    width: 120px;
+    margin: 50px 20px 20px;
+}
+
+#competence figure:hover {
+    transform: scale(1.1);
+    transition-duration: 20ms;
+}
+
+img {
+    border-radius: var(--border_radius);
+    width: 100%;
+    height: 100%;
+}
+
+#exp-pro > div.plus {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .encadre {
+        padding: 10px 15px;
+    }
+
+    #competences > div {
+        margin: 20px;
+        width: 100%;
+    }
+
+}
