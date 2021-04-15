@@ -4,9 +4,7 @@
     --border_radius: 10px;
     --main_color: rgb(39, 39, 39);
 }
-
 /* #endregion */
-
 
 main {
     background-color: var(--main_color);
@@ -34,9 +32,10 @@ article {
     margin: 5px;
 }
 
+
 h2 {
     margin: 30px 10px;
-    color: white;
+    color: lightblue;
 }
 
 h3, h4 , p{
